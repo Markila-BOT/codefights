@@ -1,0 +1,11 @@
+function rotateImage(a) {
+    var lastArray = [];
+    for (var i=0;i<a.length;i++) {
+        var firstArray = [];
+        for (var j=a.length-1;j>=0;j--){
+            firstArray.push(a[j][i]);
+        }
+        lastArray.push(firstArray);
+    }
+    return lastArray;
+}
